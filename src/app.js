@@ -7,8 +7,9 @@ import $ from "jquery";
 const openStream = require('./openStream');
 const playVideo = require('./playVideo');
 
-const config = {host: 'localhost', port: 443,secure: true, key: 'peerjs'};
+const config = {host: 'https://stream88.onrender.com', port: 443,secure: true, key: 'peerjs'};
 
+// const config = {host: 'localhost', port: 443,secure: true, key: 'peerjs'};
 
 function getPeer(){
     const id = uid(10);
@@ -18,6 +19,8 @@ function getPeer(){
 
 
 const peer = new Peer(getPeer(),config);
+
+console.log(peer);
 
 $('#btnCall').click(() => {
     const friendId = $('#txtFriendId').val();
