@@ -7,7 +7,7 @@ import $ from "jquery";
 const openStream = require('./openStream');
 const playVideo = require('./playVideo');
 
-const config = {host: 'https://stream88.onrender.com', port: 443,secure: true, key: 'peerjs'};
+const config = {host: 'stream88.onrender.com', port: 443,secure: true, key: 'peerjs'};
 
 // const config = {host: 'localhost', port: 443,secure: true, key: 'peerjs'};
 
